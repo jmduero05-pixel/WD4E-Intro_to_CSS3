@@ -1,34 +1,54 @@
 body{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 150%;
-  background: rgb(214, 214, 249);
+  font-family: "Trebuchet MS", -apple-system, Arial, Verdana, sans-serif;
+  background: rgb(230, 230, 246);
 }
 
 h1{
-  font-variant: small-caps;
+  font-variant: petite-caps;
   line-height: 150%;
-  color: rgb(48, 3, 3);
   text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Optima", sans-serif;
   color:rgb(93, 0, 255)
 }
 
 p{
-  color:rgb(2, 2, 47);
+  color:rgb(2, 2, 14);
   line-height: 125%;
 }
 
 header{
-  background-color: rgb(178, 204, 228);
+  background-color: rgb(224, 236, 247);
+  width: 100%;
+  display: inline-block;
 }
 
-nav{
+#header-image{
+    display: block;
+    float: right;
+  }
+
+/* nav{
   background-color: azure;
+  display: inline-block;
+}   */
+
+
+nav a{
+  text-decoration: none;
+  color: rgb(60, 35, 171);
+
+ 
+
 }
+nav img{
+  width: 10%;
+  top: 30px;
+}
+
 
 main{
-  background-color: darkgray;
-  font-size: 125%;
+  background-color: rgb(230, 233, 242);
+  
 }
 
 footer{
@@ -36,6 +56,28 @@ footer{
 }
 
 li{
-  display:inline;
-  width: 100px;
+  /* display:inline; */
+  list-style-type: none;
+  display: table-cell;
+  padding-right: 60px;
+} 
+.grid{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  padding-top: 15px;
 }
+
+.flex{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+  column-gap: 15px;
+  padding-top: 15px;
+}
+
+
